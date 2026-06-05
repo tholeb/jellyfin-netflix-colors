@@ -1,0 +1,54 @@
+/* Change primary accent colors to Netflix Red */
+:root {
+    --theme-primary-color: #E50914;
+    --theme-accent-color: #E50914;
+}
+
+/* Ensure progress bars, selections, and checkboxes use the red theme */
+.mdl-slider::-webkit-slider-thumb,
+.mdl-slider::-moz-range-thumb,
+.mdl-slider::-ms-thumb {
+    background: var(--theme-primary-color)!important;
+}
+
+.itemProgressBarForeground {
+    background-color: var(--theme-primary-color) !important;
+}
+
+.button-submit {
+    background: var(--theme-primary-color) !important;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline {
+    border-color: var(--theme-primary-color) !important;
+    background-color: var(--theme-primary-color) !important;
+}
+
+.emby-tab-button:hover {
+  color: var(--theme-primary-color)!important;
+}
+
+/* Play/Pause/Volume controls and progress bar on hover/active states */
+.paper-icon-button-light:hover:not(:disabled) {
+    color: var(--theme-primary-color)!important;
+    background-color: color-mix(in srgb, var(--theme-primary-color) 20%, transparent) !important;
+}
+
+/* sidebar */
+.drawer-open, .mainDrawer {
+background-color: rgba(16, 16, 16, .9);
+}
+
+.navMenuOption {
+transition: 0.2s;
+}
+.navMenuOption:hover:not(:disabled){
+background-color: color-mix(in srgb, var(--theme-primary-color) 20%, transparent) !important;
+border-left: 1px solid var(--theme-primary-color);
+}
+
+/* Cards movies */
+.countIndicator.indicator {
+  background-color: var(--theme-primary-color) !important;
+  border-radius: 5px;
+}
