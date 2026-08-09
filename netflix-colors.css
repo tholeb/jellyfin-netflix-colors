@@ -54,3 +54,8 @@
     background-color: var(--theme-primary-color) !important;
     border-radius: 5px;
 }
+
+.playedIndicator {
+    background-color: var(--theme-primary-color) !important;
+    border-radius: 4px;
+}
