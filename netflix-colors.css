@@ -2,6 +2,8 @@
 :root {
     /* Couleurs primaires (rouge principal, clair, sombre) */
   --jf-palette-primary-main: #e50914;
+  --jf-as-accent: var(--jf-palette-primary-main, #e50914);
+  --je-as-accent: var(--jf-palette-primary-main, #e50914);
   --jf-palette-primary-light: rgb(235, 77, 86);
   --jf-palette-primary-dark: rgb(160, 6, 14);
   --jf-palette-primary-contrastText: #fff;
