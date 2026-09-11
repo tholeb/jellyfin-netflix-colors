@@ -1,7 +1,9 @@
 /* Change primary accent colors to Netflix Red */
 :root {
-    --theme-primary-color: #E50914;
-    --theme-accent-color: #E50914;
+    --theme-accent-text-color: #e50914;
+    --theme-primary-color: #e50914;
+    --theme-icon-focus-background: rgba(229, 9, 20, 0.2);
+    --button-accent-background: #e50914;
 }
 
 /* Ensure progress bars, selections, and checkboxes use the red theme */
