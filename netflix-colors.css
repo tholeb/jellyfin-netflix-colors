@@ -1,7 +1,7 @@
 /* Change primary accent colors to Netflix Red */
 :root {
-    --theme-accent-text-color: #e50914;
-    --theme-primary-color: #e50914;
+    --je-as-accent: #e50914;
+    --jf-palette-primary-main: #e50914;
     --theme-icon-focus-background: rgba(229, 9, 20, 0.2);
     --button-accent-background: #e50914;
 }
@@ -10,28 +10,28 @@
 .mdl-slider::-moz-range-thumb,
 .mdl-slider::-ms-thumb,
 .mdl-slider::-webkit-slider-thumb {
-    background: var(--theme-primary-color)!important;
+    background: var(--jf-palette-primary-main)!important;
 }
 
 .itemProgressBarForeground {
-    background-color: var(--theme-primary-color) !important;
+    background-color: var(--jf-palette-primary-main) !important;
 }
 
 .button-submit {
-    background: var(--theme-primary-color) !important;
+    background: var(--jf-palette-primary-main) !important;
 }
 .emby-checkbox:checked + span + .checkboxOutline {
-    border-color: var(--theme-primary-color) !important;
-    background-color: var(--theme-primary-color) !important;
+    border-color: var(--jf-palette-primary-main) !important;
+    background-color: var(--jf-palette-primary-main) !important;
 }
 .emby-tab-button:hover {
-    color: var(--theme-primary-color)!important;
+    color: var(--jf-palette-primary-main)!important;
 }
 
 /* Play/Pause/Volume controls and progress bar on hover/active states */
 .paper-icon-button-light:hover:not(:disabled) {
-    color: var(--theme-primary-color)!important;
-    background-color: color-mix(in srgb, var(--theme-primary-color) 20%, transparent) !important;
+    color: var(--jf-palette-primary-main)!important;
+    background-color: color-mix(in srgb, var(--jf-palette-primary-main) 20%, transparent) !important;
 }
 
 /* sidebar */
@@ -44,11 +44,11 @@
     transition: 0.2s;
 }
 .navMenuOption:hover:not(:disabled) {
-    background-color: color-mix(in srgb, var(--theme-primary-color) 20%, transparent) !important;
-    border-left: 1px solid var(--theme-primary-color);
+    background-color: color-mix(in srgb, var(--jf-palette-primary-main) 20%, transparent) !important;
+    border-left: 1px solid var(--jf-palette-primary-main);
 }
 .navMenuOption-selected {
-    background-color: var(--theme-primary-color)!important;
+    background-color: var(--jf-palette-primary-main)!important;
 }
 
 /* Cards movies */
