@@ -2,6 +2,8 @@
 :root, html, body {
   /* Rouge principal, clair, foncé et contraste texte */
   --jf-palette-primary-main: #e50914;
+  --jf-palette-primary-mainChannel: var(--jf-palette-primary-main, #e50914)!important;
+  --jf-variant-textColor: var(--jf-palette-primary-main, #e50914)!important;
   --jf-palette-primary-light: rgb(235, 77, 86);
   --jf-palette-primary-dark: rgb(160, 6, 14);
   --jf-palette-primary-contrastText: #ffffff;
@@ -32,60 +34,44 @@
 
   /* Variables d'accentuation héritées et thèmes */
   --je-as-accent: var(--jf-palette-primary-main, #e50914)!important;
+  --jf-palette-AppBar-darkBg: rgba(0, 0, 0, .9)!important;
+  --jf-palette-background-paper: rgba(0, 0, 0, .9)!important;
+  --Paper-overlay: var(--jf-overlays-1)!important;
 }
 
-/* Ensure progress bars, selections, and checkboxes use the red theme */
-.mdl-slider::-moz-range-thumb,
-.mdl-slider::-ms-thumb,
+/* Changes the active/filled portion of both progress and volume bars */
+.mdl-slider-background-lower {
+    background-color: var(--jf-palette-primary-main, #e50914) !important;
+}
+
 .mdl-slider::-webkit-slider-thumb {
-    background: var(--jf-palette-primary-main)!important;
+    background: var(--jf-palette-primary-main, #e50914) !important;
+}
+.mdl-slider::-moz-range-thumb {
+    background: var(--jf-palette-primary-main, #e50914) !important;
+}
+.mdl-slider::-ms-thumb {
+    background: var(--jf-palette-primary-main, #e50914) !important;
 }
 
-.itemProgressBarForeground {
-    background-color: var(--jf-palette-primary-main) !important;
+.mdl-slider {
+    color: var(--jf-palette-primary-main, #e50914) !important;
 }
 
-.button-submit {
-    background: var(--jf-palette-primary-main) !important;
-}
-.emby-checkbox:checked + span + .checkboxOutline {
-    border-color: var(--jf-palette-primary-main) !important;
-    background-color: var(--jf-palette-primary-main) !important;
-}
-.emby-tab-button:hover {
-    color: var(--jf-palette-primary-main)!important;
-}
-
-/* Play/Pause/Volume controls and progress bar on hover/active states */
-.paper-icon-button-light:hover:not(:disabled) {
-    color: var(--jf-palette-primary-main)!important;
-    background-color: color-mix(in srgb, var(--jf-palette-primary-main) 20%, transparent) !important;
-}
-
-/* sidebar */
-.drawer-open,
-.mainDrawer {
-    background-color: rgba(16, 16, 16, .9);
-}
-
-.navMenuOption {
-    transition: 0.2s;
-}
-.navMenuOption:hover:not(:disabled) {
-    background-color: color-mix(in srgb, var(--jf-palette-primary-main) 20%, transparent) !important;
-    border-left: 1px solid var(--jf-palette-primary-main);
-}
-.navMenuOption-selected {
-    background-color: var(--jf-palette-primary-main)!important;
+.docspinner.mdlSpinnerActive .mdl-spinner__layer-1,
+.docspinner.mdlSpinnerActive .mdl-spinner__layer-2,
+.docspinner.mdlSpinnerActive .mdl-spinner__layer-3,
+.docspinner.mdlSpinnerActive .mdl-spinner__layer-4 {
+    border-color: var(--jf-palette-primary-main, #e50914) !important;
 }
 
 /* Cards movies */
 .countIndicator.indicator {
-    background-color: var(--theme-primary-color) !important;
+    background-color: var(--jf-palette-primary-main) !important;
     border-radius: 5px;
 }
 
 .playedIndicator {
-    background-color: var(--theme-primary-color) !important;
+    background-color: var(--jf-palette-primary-main) !important;
     border-radius: 4px;
 }
