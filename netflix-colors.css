@@ -76,3 +76,8 @@
     background-color: var(--jf-palette-primary-main) !important;
     border-radius: 4px;
 }
+
+/* Actor cards */
+.defaultCardBackground2 {
+  background-color: var(--jf-palette-primary-main, #e50914)
+}
