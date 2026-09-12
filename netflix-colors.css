@@ -36,6 +36,7 @@
   --je-as-accent: var(--jf-palette-primary-main, #e50914)!important;
   --jf-palette-AppBar-darkBg: rgba(0, 0, 0, .9)!important;
   --jf-palette-background-paper: rgba(0, 0, 0, .9)!important;
+  --jf-palette-background-paperChannel: rgba(0, 0, 0, .9)!important;
   --Paper-overlay: var(--jf-overlays-1)!important;
 }
 
